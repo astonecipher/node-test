@@ -1,12 +1,28 @@
 {
-  "name": "nodemail",
+  "name": "test",
   "version": "1.0.0",
-  "description": "Testing node",
+  "description": "test node deployment",
   "main": "index.js",
-  "author": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astonecipher/node-test.git"
+  },
+  "author": "Andrew Stonecipher",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "dotenv": "^8.2.0"
-  }
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "bugs": {
+    "url": "https://github.com/astonecipher/node-test/issues"
+  },
+  "homepage": "https://github.com/astonecipher/node-test#readme"
+  
 }
