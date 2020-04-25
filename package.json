@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "test node deployment",
   "main": "index.js",
-  "scripts": {   
+  "scripts": {
     "start": "node index.js"
-    },
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/astonecipher/node-test.git"
@@ -14,7 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "dotenv": "^8.2.0"
+    "morgan": "^1.8.2"
   },
   "engines": {
     "node": "12.x"
@@ -23,5 +23,4 @@
     "url": "https://github.com/astonecipher/node-test/issues"
   },
   "homepage": "https://github.com/astonecipher/node-test#readme"
-  
 }

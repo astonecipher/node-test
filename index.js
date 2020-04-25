@@ -1,14 +1,13 @@
+'use strict'
 const express = require('express');
-require('dotenv').config();
+const morgan = require('morgan');
 
-var app = express();
-app.get('/', function (req, res) {
-  res.send('Something');//process.env.env_name);
+const app = express();
+
+app.use(morgan('dev'));
+
+app.get('/hello/:name', (req, res) => {
+  res.status(200).json({'hello':req.params.name});
 });
-app.get('/helo', function (req, res) {
-  res.send((process.env.env_name|| 'Not Set'));
-});
-// const port = 3000;
-app.listen(5050, function () {
-  console.log('Example app listening on port 3000!');
-});
+
+app.listen(3030, () => console.log('Ready'));
